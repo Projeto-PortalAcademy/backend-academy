@@ -1,0 +1,1 @@
+from app.utils import SingletonMeta as Singleton
