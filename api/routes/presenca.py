@@ -2,8 +2,8 @@ from fastapi import HTTPException, status, APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.exc import SQLAlchemyError
-from app.schemas import PresencaModel, DatePresence
-from app.models import Presenca
+from app.schema.schemas import PresencaModel, DatePresence
+from app.models.models import Presenca
 from app.database import get_db
 from app.logging import AppLogger
 from datetime import date
